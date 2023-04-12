@@ -62,5 +62,4 @@ class SignupTopic < ApplicationRecord
   def serialize_to_json
 
   end
-
 end
