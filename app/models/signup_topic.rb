@@ -78,4 +78,16 @@ class SignupTopic < ApplicationRecord
   def serialize_to_json
 
   end
+
+  def find_if_topic_available
+    return true
+  end
+
+  def is_available()
+    if count_available_slots.positive?
+      return true
+    end
+    return false
+  end
+
 end
